@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+	<link rel="icon" href="http://example.com/favicon.png">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
+	<style>
+		.BlurImage{
+			height: 400px;
+			width: 400px;
+			display: inline-block;
+			position: relative;
+		}
+
+		.BlurImage img{
+			height: 100%;
+			width: 100%;
+			border-radius: 4px;
+			transition:0.3s;
+		}
+
+		.BlurImage:hover img{
+			opacity: 0.2;
+		}
+
+		.BlurImage p{
+			position: absolute;
+			top: 10%;
+			z-index: 1;
+			width: 100%;
+			text-align: center;
+			color: black;
+			opacity: 0;
+			transition: 0.3s;
+		}
+
+		.BlurImage:hover p{
+			opacity: 1;
+		}
+
+		p {
+		font-family: Didact Gothic, Geneva, sans-serif;
+		font-size: 20px;
+		color: rgb(139,137,137);
+		}
+
+		a {
+		font-family: Didact Gothic, Geneva, sans-serif;
+		font-size: 20px;
+		}
+		
+		body {
+			background-color: #f5f5f5;
+		}
+	
+	</style>
+		
+		<!-- Hover.css -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
+
+		<!-- Animate.css -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+		<!-- Latest compiled and minified CSS -->
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+		<title>James Chen</title>
+
+	</head>
+	
+	<div class="container-fluid"> 
+		<body>
+			<h2 style="font-family: Didact Gothic, Geneva, sans-serif; font-size: 35px; line-height: 500%; color: rgb(139,137,137);" class="text-center">J A M E S &nbsp; C H E N</h2> 
+			
+			<div id="SocialMedia" class="row justify-content-center">
+				<div class="col-xs-3 m-3">
+					<a href="https://www.instagram.com/jchen27_/" target="_blank"> <img class="img-responsive hvr-grow" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Instagram_simple_icon.svg/512px-Instagram_simple_icon.svg.png" width="50px" height="50px" alt=""></a> 
+				</div>
+
+				<div class="col-xs-3 m-3">
+					<a href="https://www.linkedin.com/in/james23chen/" target="_blank"><img class="img-responsive hvr-grow" src="https://image.flaticon.com/icons/png/512/61/61109.png" width="50px" height="50px" alt=""></a>
+				</div>
+
+				<div class="col-xs-3 m-3">
+					<a href="https://github.com/j769chen" target="_blank"><img class="img-responsive hvr-grow" src="https://cdn0.iconfinder.com/data/icons/octicons/1024/mark-github-512.png" width="50px" height="50px" alt=""></a>
+				</div>
+
+				<div class="col-xs-3 m-3">
+						<a href="mailto:j769chen@uwaterloo.ca" target="_blank"><img class="img-responsive hvr-grow" src="https://d29fhpw069ctt2.cloudfront.net/icon/image/38198/preview.svg" width="50px" height="50px" alt=""></a>
+				</div>
+			</div>
+
+			<div id="NavBar" class="row justify-content-center">
+				<div class="col-xs-3 m-1">
+					<a href="About.html"style="color: #8b8989">About Me</a>
+				</div>
+				
+				<div class="col-xs-3 m-1">
+					<p>|</p>
+				</div>
+
+				<div class="col-xs-3 m-1">
+					<p style="color:black">Projects</p>
+				</div>
+
+				<div class="col-xs-3 m-1">
+					<p>|</p>
+				</div>
+				
+				<div class="col-xs-3 m-1">
+					<a href="Resume.html" style="color: #8b8989">Resume</a>
+				</div>
+
+				<div class="col-xs-3 m-1">
+					<p>|</p>
+				</div>
+				
+				<div class="col-xs-3 m-1">
+					<a href="Interests.html" style="color: #8b8989">Extracurriculars</a>
+				</div>
+			</div>
+			
+			<p style="text-align: center; font-size: 30px;">P R O J E C T S</p>
+
+			<div id="Projects1" class="row justify-content-center">
+				<div class="col-xs-4 m-5">
+					<h3 style="text-align: center">HealthOnTrack</h3>
+					<div class="BlurImage">
+						<p>Developed at UOttahack 2019, this project allows users to track their calorie and macro intake throughout the day. Users can set customized
+							limits for their maximum daily intake of each nutrient, and the app will tell you what percentage of your daily intake you have reached. This project 
+							was developed in Python, and made use of the PyQt5 library for its front end.
+						</p>
+						<a href="https://github.com/AGabtni/Health_On_Track" target="_blank"><img class="img-responsive hvr-grow" src="http://ew.content.allrecipes.com/sites/default/files/inline-images/chicken%20burrito%20bowls.jpg" alt=""></a>
+					</div>
+				</div>
+				
+				<div class="col-xs-4 m-5">
+					<h3 style="text-align: center">Arduino RC Car</h3>
+					<div class="BlurImage">
+						<p>I created this arduino car in a group of three as my grade 12 CS summative. The car had three modes: "RC mode", where the car was controlled by the user via bluetooth and a 
+							remote control app on their phone, "Autopilot mode", where the car used distance sensors in order to navigate like a roomba and "Line Follower mode", where the car used
+							a light sensor to follow black lines on the ground. This project was made using an Arduino UNO and programmed in the Arduino Language.
+						</p>
+						<a href="https://github.com/jonathanko45/Arduino-Car" target="_blank"><img class="img-responsive hvr-grow" src="https://raw.githubusercontent.com/jonathanko45/Arduino-Car/master/ArduinoCar.jpg" alt=""></a>
+					</div>
+				</div>
+			</div>
+
+			<div id="Projects2" class="row justify-content-center">
+				<div class="col-xs-4 m-5">
+					<h3 style="text-align: center">Toy Boat Display</h3>
+					<div class="BlurImage">
+						<p style="top: 5%">This display case was made as my final design project in my first term at UW. The display case had a feature where the boats travelled in a circle like magic within the basin. 
+							This was achieved by attaching magnets to an arduino stepper motor which rotated underneath the display case, and having these attract magnets that were attached to the bottoms 
+							of the model boats in the display case. I used SolidWorks and AutoCAD to create preliminary models, and also used power tools in order to assemble the actual display case.
+						</p>
+						<img class="img-responsive" src="https://lh3.googleusercontent.com/-JC5de47Qr9ve3AO7n7AFsqJXbppSNHAK7P2PH48Fn-VCj_9vBsfmZCihCIgmb7PHJtqYpLSgkYVC8_H-0NwC1W-7xku1NkJsEs0QDv7kjPwgURxMkcq06IDWIY7MzZ9hxwk7fb-wZOvSRPv88bkUtGVAoU45x_w-aPIBMqrm_urz7wD6lxn13aFNp_tMLjd6y4oqqCjWl6hy_ZRmntV-Sb3YBUzDfBcW5il-yIrOPPymaPvTrdMpCIDZnuPWf3QU1GAs5A5gvV1OPGzFmuMAoD1__LUO_4YwKQFxGzgzvhXggJ2CqXI0DK9ee71cDurcw5iSh_TNJls6aYZ_oIej-4zXctAi5_bnAm-l1vvE8b59iPOlb9g8KKw-k8br76H2m2Y0ZwRHX3J0Ur5Q6X0ucSUhjXI52VOHVfQBtWyvBJeYLUtBvj4P0RzY0VsUt9-dHOqoaiuWgR34No2tM3Z9paerA2CnbCG3mqic2fF6XicljYjZSeETcvKh6HB9Z_aGdXJdk4Dyu8l5_GVOOVtbzPWUpjsy3fggDHPOdiPRPFuKru3SIWX9KHY5RJ8b3dsyRjKJdheaOz3VAIZo30aWA6VvngZcXV1gfmC0Rz-An4U68Fc-3j4QikBs10dA0vlfJpwxYrbpFO_VMA2ixRgu38ODx8P5lQ=w234-h235-no" alt="">
+					</div>
+				</div>
+
+				<div class="col-xs-4 m-5">
+					<h3 style="text-align: center">F1 Model Car</h3>
+					<div class="BlurImage">
+						<p style="top: 5%">In my grade 12 calculus and vectors class, we were split into groups of four and were given the task to design a model F1 race car and compete against others in our class.
+							We used AutoCAD in order to model our vehicle before having it 3D printed. Throughout this project, we went through multiple iterations of our vehicle, and did various
+							tests on each car, such as acceleration, velocity, etc., and used excel to model our data and decide what to change in the car. My group ended up winning the in-class competition.
+						</p>
+						<img class="img-responsive" src="https://lh3.googleusercontent.com/Rj8x0Qw2Gmm2w-yyiJUaXN6r1y-OOXIVgY2JxYKBd5z-O_K5pfxMo18gUQwUu6VH59xe2sW7lh78uuoPo2UXgTF-PRj_9eDGm6bTSJOx5_p6y9tC-bA-k0gu-KmXtpCgJHDglii1DkFs_NbtHnduDcwHcCoo_bhPdN7q4xJE_Qeu5bWjIS8C8Jf3AofENu2GBycHCOtZEGe1k2xAee8qhWnBF8PcsXxrPa4pQ3IuHoNi4ri1B2mphRSpS6G7wTE3rB8PPchL1haCfD-JY6wWcyEE8QgZym5OTlQaRC46eUAJP64vkkammoAnjJeBLDyRr5DhHQxZx1_uukIrCY1jNZzqlxz_vSZE11uyipZ--6BsdFtwBXVNNZPdHo_WxMTsW5Y8qydw5ymSYOT60BHizdHVIOpaIwuelZJK98jAVU6JQvj4FnM85XrlM-ldxSb9xa7_q8I_DghLr-nRsB1n51n4DTp7g22RW5UxiwsdzyvzlkWz5rqgny5rB4mhtxh1BQp0gpB9BVBwn-Hu7-XsegZxpRLujVkv4mZbu2Pm_Mtio7Z_X4NckRXDAB66AyRD9uhopsh_t0IX7TmG1gQnYtlojG64l63RHPa9s3jaa3DHOevKFM02Gr85P1Tf4O_P50x36Rpsmqj386au5oUvBEdsoWkGaao=s341-no" alt="">
+					</div>
+				</div>
+			</div>
+
+			<div id="Projects3" class="row justify-content-center">
+				<div class="col-xs-4 m-5">
+					<h3 style="text-align: center">RPN Calculator</h3>
+					<div class="BlurImage">
+						<p>This Reverse-Polish-Notation calculator was made for my grade 12 computer science class. It was a project that combined all of the software development concepts that we had learned up
+							until that point, including linked lists, stack, classes and inheritance aswell as front end design. I developed the calculator in C++, and used the Allegro 5 graphics library to design
+							the GUI.
+						</p>
+						<a href="https://github.com/j769chen/RPN-Calculator" target="_blank"><img class="img-responsive hvr-grow" src="https://lh3.googleusercontent.com/67hVdDxx5ijxY96ptF10Ho9YbVmZn09KkQLvdp0432UaS-0nfWbzpIzVAf2RTbpbV313JyQQSLPDS4oo5-sdkVse7Z9N6Kpm7qa0jryj5Lu39Maf4ziNukaXqInCXUBqQW7BVobbEXrjungInopo0o1rtNQu73LrJdRaqMtHtfiC8Gh5TxF5-oWy9CsTGC7lfoLIXEVzNJmjJwFq2qfYJrM3T0c4e9sLYyVVYKB78vs7bKmcfjpjgX1nBiu6sZeyiSc6l54T_mQyOvsZwIR0rLkaH8keOlp-UENf-vfbkve2TYCMvYqX4_A9MlEubZ9lJk03Yz_qhoolqSj9ruWZUJ6SXkY5rJYkEsUloqWO1Jwz_-FVop7NtsRRXi1gA8oXqevEQgFFcnpryqxbVEfUQ6X6fDxR3h8L6tXp1GDALwtNzweA-8IGEjuR6vh3pRY31i_AU1s3WnWBzaPnAZvPwBaO1xYMJfQe0iaNWJE9BId98Z3T0qKm8Q7Gp4q9zfSF86pe3Hw4z05kFXyBmh2cFGSqbN2Ur83qk7ZiqIUuKOlmmdZdR1IdUFT_o8eZY7ARs8yV085E3VGZkxQSTH_Fgu-Rp73jlodsmCQuiwbqONz8SqJ6_tLaGR3ob4YlFm4t1dZr87Srj8qLbTynzkYjqkVYQZL0N48=s517-no" alt=""></a>
+					</div>
+				</div>
+
+				<div class="col-xs-4 m-5">
+					<h3 style="text-align: center">Fruit Ninja</h3>
+					<div class="BlurImage">
+						<p>For my grade 11 computer science summative, I decided to create a version of the famous Fruit Ninja mobile game for desktop. The game had all of the features from the original game's classic
+							mode, including bombs and keeping track of the user's score. I created this project in C, incorporating various concepts such as structures, and used the Allegro 4 library in order to create the 
+							graphics.
+						</p>
+						<img class="img-responsive" src="https://lh3.googleusercontent.com/UxhfvCoqNo8jdyOhpoacEf0wSUNkV3gKpacMHixZ4Apu38qLtLsdAtKWqgis1myDLslNXes3O4IYo-SHefPBkKk9P5Epu4s6XllMyd-LGOmKmmOBDMyQ7ggX9SFXxUrv6wMuZVkzAoKHK4WhgKQb8Tb5779QwoZNd5TFZLJYXFNQle1FeMpvbsOydstBGFRFy9UWIHycKsEnJ9VV9_XaAld52l5RGCdV-pxAkiAW1PwoHYyxsHnXgNp7sm3vl5KakZ4YQwJY1b5ITM94sUNIgBcVMqU9uqdE0ausl55t14YY__5pnY14uiCYXU6KoUfg-WLeDIxsQpuOV8g1NUfgHfzXeiRi6GwDd8lHkGn-9U9530hDqwJWWf1GPV8r1VtPggf_K1QsMDouJ9_Z_sVFxp3ugEFvRQ8M_i5nSQ2suXMlqhCAkUZAxAg-8f7HdXJnC7VschCLMIurXuPzlYtObs4y0d3a4wkL31ydQJ22MQKaJCimbFCeBtP6ysSGz-7KXYtVpwLbm4bTlvVEc_BZaPRFxkyZ02MJ-PH0eg-JGm51vwfFGn446Enc74cQW-zWE-0wWySgaDEriJrlPIqFLGAWNTtCKOWZjdPEdtVRwDbE9g-dTD0wr3b-beDeGql6cfQWRQX7sQQ9q49h58pAwqhUr26EI0k=s342-no" alt="">
+					</div>
+				</div>
+			</div>
+
+	
+			<div id="Copyright" class="row justify-content-center">
+					<div class="col-md-8">
+						<p class="text-center" style="font-size: 15px">
+							james.chen2@uwaterloo.ca <br> 613-600-9672
+						</p>
+						<hr>
+						<p class="text-center" style="font-size: 10px">
+							Copyright © James Chen 2019
+						</p>
+					</div>
+			</div>
+		
+		</body>
+
+	
+	</div>
+</html>	
