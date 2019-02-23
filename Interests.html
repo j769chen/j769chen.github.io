@@ -177,8 +177,7 @@
 					<p style="font-size: 15px; text-align: justify;">I started playing badminton recreationally when I was young, but only began taking it seriously and training/competing two years ago. 
 						I have played in both district and provincial level tournaments, and have even medalled in provincial tournaments. I also coached during the summer before university. 
 						Badminton has helped me to develop many of my skills, including work-ethic, perserverance, and leadership skills. It has also given me the opportunity to make new 
-						friends, and gave me some of my fondest memories. 
-					</p>
+						friends, and gave me some of my fondest memories.</p>
 				</div>
 				<div class="col-md-4">
 					<img style="border-radius: 6px;" id="medals" class="img-responsive hvr-float" src="medals.jpg" alt="Medallists from Provincials 2018" width="170px" height="279px">
@@ -211,21 +210,60 @@
 					</div>
 
 					<script>
-						var modal1 = document.getElementById('modal2');
-						var img1 = document.getElementById('readystance');
-						var modalImg1 = document.getElementById('img2');
-						img1.onclick = function(){
-							modal1.style.display = "block";
-							modalImg1.src = this.src;
+						var modal2 = document.getElementById('modal2');
+						var img2 = document.getElementById('readystance');
+						var modalImg2 = document.getElementById('img2');
+						img2.onclick = function(){
+							modal2.style.display = "block";
+							modalImg2.src = this.src;
 							captionText.innerHTML = this.alt;
 						}
-						var span1 = document.getElementsByClassName("close")[1];
-						span1.onclick = function(){
-							modal1.style.display = "none";
+						var span2 = document.getElementsByClassName("close")[1];
+						span2.onclick = function(){
+							modal2.style.display = "none";
 						}
 					</script>
 				</div>
 			</div>
+
+			<div class="row justify-content-center">
+				<p style="color: #838b83">Key Club</p>
+			</div>
+
+			<div class="row justify-content-center">
+				<div class="col-sm-2">
+					<p style="font-size: 15px; text-align: justify;">I joined Key Club in grade 11, as it was a good way to make a positive impact my local community, and stayed in it until the end of High School. 
+						During my time in Key Club, I regularily participated in the activities at the weekly meetings, such as making chew toys for animal shelters. I also participated in fundraising events, such as 
+						a Spaghetti Dinner Trivia Night, which served as a fundraiser for the Sleeping Children Around the World charity. At this event, I helped to set up the venue, ran the food station, and also corrected
+						trivia cards. Key club helped me to improve many of my soft skills. These included teamwork, which I developed through working with others to run events and time management, which I developed while 
+						balancing extracurriculars with schoolwork. It also helped me to appreciate the value of giving back to my community.</p>
+				</div>
+				<div class="col-md-4">
+						<img style="border-radius: 6px;" id="keyclub" class="img-responsive hvr-float" src="key club.jpg" alt="Key Club" width="593px" height="445px">
+						<div id="modal3" class="modal">
+							<span class="close">&times;</span>
+							<img class="modalImgWide" id="img3">
+							<div id="caption3"></div>
+						</div>
+			
+						<script>
+							var modal3 = document.getElementById('modal3');
+							var img3 = document.getElementById('keyclub');
+							var modalImg3 = document.getElementById('img3');
+							img3.onclick = function(){
+								modal3.style.display ="block";
+								modalImg3.src = this.src;
+								captionText.innerHTML = this.alt;
+							}
+							var span3 = document.getElementsByClassName("close")[2];
+							span3.onclick = function(){
+								modal3.style.display = "none";
+							}
+						</script>
+				</div>
+			</div>
+
+			<br>
 		
 			<div class="row justify-content-center">
 					<div class="col-md-8">
