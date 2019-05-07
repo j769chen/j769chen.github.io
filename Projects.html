@@ -6,6 +6,61 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
 	<style>
+		*{box-sizing: border-box}
+		/*Carousel*/
+		.slides{
+			display: none
+		}
+
+		.carousel-container {
+			max-width:1000px;
+			position: relative;
+			margin: auto;
+			border-style: solid;
+			border-color: rgb(139,137,137);
+			border-radius: 3px; 
+		}
+
+		.button {
+			background-color: rgb(0,153,255);
+			color: white;
+			padding: 5px 10px;
+			cursor: pointer;
+			transition: 0.6s;
+			border-radius: 3px;
+		}
+
+		.button:hover {
+			background-color: rgb(0, 102, 255);
+		}
+
+		.captionText {
+			color: black;
+			font-size: 16px;
+			position: absolute;
+			width: 100%;
+			text-align: center;
+		}
+
+		/*Fade when changing slides */
+		.fade {
+		-webkit-animation-name: fade;
+		-webkit-animation-duration: 1.5s;
+		animation-name: fade;
+		animation-duration: 1.5s;
+		}
+
+		@-webkit-keyframes fade {
+		from {opacity: .4} 
+		to {opacity: 1}
+		}
+
+		@keyframes fade {
+		from {opacity: .4} 
+		to {opacity: 1}
+		}
+
+		/*Blurred Images on Hover*/
 		.BlurImage{
 			height: 400px;
 			width: 400px;
@@ -24,6 +79,7 @@
 			opacity: 0.2;
 		}
 
+		/*Text on blurred images*/
 		.BlurImage p{
 			position: absolute;
 			top: 10%;
@@ -134,7 +190,72 @@
 				</div>
 			</div>
 			
-			<p style="text-align: center; font-size: 25px;">P R O J E C T S</p>
+			<p style="text-align: center; font-size: 25px;">F E A T U R E D</p>
+
+			
+			<div class="carousel-container">
+				<div class="slides">
+					<img src="zaku head.png" style="width:100%">
+					<div class="captionText">I based this model on the head of a Zaku from the famous anime Gundam. I primarily
+						used surfacing techniques, such as lofted surfaces and bounded surfaces. The most challenging part of the build
+						was figuring out a way to model the tubes on the side, specifically how to create the red pieces. Rather than building 
+						each piece separately, I created a surface offset of the base tube, and used the split line function to cut off small 
+						segments of the red tube, and filling in the gaps. Overall, this project helped me to greatly improve my SolidWorks surfacing skills.
+					</div>
+				</div>
+			
+				<div class="slides">
+					<img src="bird.png" style="width:100%">
+					<div class="captionText">Since badminton is my favourite sport, I decided it would be fun if I modeled a shuttlecock in SolidWorks.
+						It turned out to be a fun exercise that allowed me to practice using patterns is SolidWorks, aswell as some techniques that I did
+						not learn in class, such as boundaries, and a split line. Through this project, I was able improve my SolidWorks creativity. While
+						it was not technically hard to model, I had to think about the most efficient way to model the shuttle, while making it as accurate as possible. 
+						I had to think outside of the box to achieve this.
+					</div>
+				</div>
+
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<div class="row justify-content-center">
+					<a class="button" style="color: white; margin-right: 10px;" onclick="plusSlides(-1)">&#10094; Prev</a>
+					<a class="button" style="color: white; margin-left: 10px;" onclick="plusSlides(1)">Next &#10095;</a>
+				</div>
+				<br>		
+			</div>
+
+			<script>
+				var slideIndex = 1;
+				showSlides(slideIndex);
+
+				function plusSlides(n){
+					showSlides(slideIndex += n);
+				}
+
+				function currentSlide(n) {
+					showSlides(slideIndex = n);
+				}
+
+				function showSlides(n) {
+					var i;
+					var slides = document.getElementsByClassName("slides");
+					if (n > slides.length) {
+						slideIndex = 1
+					}
+					if (n < 1) {
+						slideIndex = slides.length
+					}
+					for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";
+					}
+					slides[slideIndex-1].style.display = "block";
+				}
+			</script>
+			<br>
+
+			<p style="text-align: center; font-size: 25px;">A L L &nbsp; P R O J E C T S</p>
 
 			<div id="Projects1" class="row justify-content-center">
 				<div class="col-xs-4 m-5">
